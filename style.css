@@ -1,0 +1,241 @@
+body,html,ul {
+    margin:0;
+    overflow-x: hidden;
+    font-family: 'Dosis', sans-serif;
+    padding: 0;
+}
+
+header {
+    max-width: 1440px;
+    max-height: 809px;
+    min-width: 1440px;
+    min-height: 809px;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(imgs/layerheader.png);
+    
+    background-position: center;
+    margin:auto;
+    
+}
+.mainContainer {
+    width: 950px;
+    margin:auto;
+}
+.spanColor {
+    color:#9c4494;
+}
+.headerP {
+    margin: 0;
+    padding-top: 70px;
+    padding-bottom: 30px;
+    color:white;
+    font-size: 70px;
+    text-align: center
+}
+.big {
+    font-size: 80px;
+}
+body > header > div > h2 {
+    font-size: 35px;
+    text-align: center;
+    color:white;
+    margin:0;
+    font-family: 'Poiret One', cursive;
+}
+body > header > div > h2 > p {
+    font-size: 20px;
+}
+.shapeContainer {
+    margin-top: 250px;
+}
+
+svg {
+  height: 115px;
+  width: 240px;
+  transform: rotate(90deg);
+}
+path {
+  stroke: white;
+  stroke-width:3;
+  fill: white;
+  fill-opacity: 0.1;
+  pointer-events:all
+}
+
+body > header > div > div > div {
+    display: inline-block;
+    width: 140px;
+    color:white;
+    position: relative;
+
+}
+.jumperDiv {
+    transform: translateY(-100%)
+    
+}
+.smallHexagon {
+    position: relative;
+    left: 50%;
+    transform: translateX(-85%);
+    
+}
+.smallSvg {
+    height: 65px;
+}
+.headerImgText {
+   text-align: center;
+    position: relative;
+    lefT: -6px;
+    font-weight: 700;
+}
+.imgKeeper {
+   display: inline-block;
+    width: 50px;
+    position: absolute;
+    top: 12px;
+    left: 100px;
+}
+.imgKeeperArrow {
+   width: 40px;
+    position: absolute;
+    top: 25px;
+    left: 110px;
+}
+nav {
+    background-color: white;
+    height: 89px;
+}
+nav h2 {
+    float:left;
+    color: lightslategrey;
+}
+body > nav > div > h2 > span:nth-child(1) {
+    font-size: 30px;
+}
+body > nav > div > h2 > span.spanColor > span {
+    font-size: 30px;
+}
+.NavUls {
+    float:right;
+    list-style: none;
+}
+.NavUls li {
+    display: inline-block;
+    margin:34px 15px 34px 0px;
+    font-weight: 600;
+    color: lightslategrey;
+}
+.NavUls li:hover {
+    cursor: pointer;
+    color:#9c4494;
+}
+body > article:nth-child(3){
+    background-color: #ededed;
+    color:#c7c7c7;
+    height: 80vh;
+    max-height: 647px;
+    width: 100%;
+    
+}
+body > article:nth-child(3){
+    display: flex;
+}
+body > article:nth-child(3) > div {
+    display: flex;
+    
+}
+body > article > div > div {
+   width: 23%;
+   margin: 0.5%;
+    position: relative;
+}
+body > article > div > div > img {
+    position: absolute;
+}
+body > article > div > div:nth-child(1) > img {
+    top: 35px;
+    left: 85px;
+}
+body > article > div > div:nth-child(2) > img {
+    top: 35px;
+    left: 80px;
+}
+body > article > div > div:nth-child(3) > img {
+    top: 35px;
+    left: 93px;
+}
+body > article > div > div:nth-child(4) > img {
+    top: 35px;
+    left: 98px;
+}
+body > article > div > div > svg {
+    height: 130px;
+}
+body > article > div > div > svg > path {
+    stroke:#cfd3d4;
+}
+.textColorAlgin{
+    text-align: center;
+    color:#999999;
+    max-height: 330px;
+}
+body > article:nth-child(4) > div {
+    justify-content: center;
+}
+body > article:nth-child(4) > div > h2 > img:nth-child(1) {
+    position: relative;
+    top: 15px;
+}
+body > article:nth-child(4) > div > h2 > img:nth-child(3) {
+   position: relative;
+    top: -10px; 
+}
+body > article:nth-child(4) {
+    height: 600px;
+    display: flex;
+}
+.imgTv {
+    background-image: url(imgs/screens.png);
+    width: 560px;
+    height: 400px;
+    float: left;
+    background-size: 90%;
+    background-repeat: no-repeat;
+}
+body > article:nth-child(4) > div > h2 {
+    margin-bottom: 50px;
+}
+body > article:nth-child(4) > div > button {
+    border: none;
+    color: white;
+    padding: 20px 40px;
+    margin-top: 60px;
+    background-color: #9c4497;
+    cursor: pointer;
+}
+body > article:nth-child(5) {
+    width: 100%;
+    height: 400px;
+    background-image: url(imgs/artc.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center
+
+}
+.articleHat {
+    top: 120px;
+    left: 50%;
+    transform: translate(-57%);
+    color:white;
+}
+body > article:nth-child(5) > div > div > div {
+    top: 33px;
+    left: 90px;
+}
+body > article:nth-child(5) > div > p {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    margin-top: 140px;
+}
