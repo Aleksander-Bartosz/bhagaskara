@@ -1,118 +1,304 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="utf-8">
-    <title>Javascript Furry game</title>
-	<link rel='stylesheet' type='text/css' href='css/style.css'>
-	<script src='app_rev.js'></script>
-</head>
-
-<body>
-	<h2>Play on keyboard arrows</h2>
-	<div class='score'>0</div>
- <section id='board'>
-    <div class='furry'></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-  <section/>	
-</body>
-
+<html lang="pl-PL">
+  <head>
+    <meta charset="UTF-8">
+    <script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <link rel="stylesheet" href="style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Josefin+Sans|Open+Sans|Poiret+One|Raleway" rel="stylesheet">
+    <script src='app.js'></script>
+    <title>Bhaga</title>
+  </head>
+  <body>
+      <header>
+          <div class='mainContainer'>
+              <p class='headerP'>B<span class='big'>h</span>agas<span class='spanColor'><span class='big'>k</span>ara</span>.</p>
+              <h2>Lorem ipsum dolor sit amet, consectetur.<p>Aliquam nec ligula nec nisi viverra bibendum. Maecenas vitae imperdiet lectus. </p></h2>
+              <div class='shapeContainer'>
+                  <div>
+                      <svg viewBox='0 0 120 100'>
+                      <path d='M38,2 
+                               L82,2 
+                               A12,12 0 0,1 94,10 
+                               L112,44 
+                               A12,12 0 0,1 112,56
+                               L94,90       
+                               A12,12 0 0,1 82,98
+                               L38,98
+                               A12,12 0 0,1 26,90
+                               L8,56
+                               A12,12 0 0,1 8,44
+                               L26,10
+                               A12,12 0 0,1 38,2' />
+                          
+                      </svg>
+                      <div class='imgKeeper'>
+                          <img src="imgs/settings.png" width="40" height="40"/>
+                          <p class='headerImgText'>About</p>
+                      </div>
+                  </div>
+                  <div>
+                      <svg viewBox='0 0 120 100'>
+                      <path d='M38,2 
+                               L82,2 
+                               A12,12 0 0,1 94,10 
+                               L112,44 
+                               A12,12 0 0,1 112,56
+                               L94,90       
+                               A12,12 0 0,1 82,98
+                               L38,98
+                               A12,12 0 0,1 26,90
+                               L8,56
+                               A12,12 0 0,1 8,44
+                               L26,10
+                               A12,12 0 0,1 38,2' />
+                     </svg>
+                      <div class='imgKeeper'>
+                          <img src="imgs/user.png" width="40" height="40"/>
+                          <p class='headerImgText'>Team</p>
+                      </div>
+                  </div>
+                  <div class='jumperDiv'>
+                      <svg viewBox='0 0 120 100'>
+                      <path d='M38,2 
+                               L82,2 
+                               A12,12 0 0,1 94,10 
+                               L112,44 
+                               A12,12 0 0,1 112,56
+                               L94,90       
+                               A12,12 0 0,1 82,98
+                               L38,98
+                               A12,12 0 0,1 26,90
+                               L8,56
+                               A12,12 0 0,1 8,44
+                               L26,10
+                               A12,12 0 0,1 38,2' />
+                        </svg>
+                          <div class='imgKeeper'>
+                              <img src="imgs/bubble.png" width="40" height="40"/>
+                              <p class='headerImgText'>Services</p>
+                          </div>
+                  </div>
+                  <div class='jumperDiv'>
+                      <svg viewBox='0 0 120 100'>
+                      <path d='M38,2 
+                               L82,2 
+                               A12,12 0 0,1 94,10 
+                               L112,44 
+                               A12,12 0 0,1 112,56
+                               L94,90       
+                               A12,12 0 0,1 82,98
+                               L38,98
+                               A12,12 0 0,1 26,90
+                               L8,56
+                               A12,12 0 0,1 8,44
+                               L26,10
+                               A12,12 0 0,1 38,2' />
+                    </svg>
+                      <div class='imgKeeper'>
+                          <img src="imgs/photo.png" width="40" height="40"/>
+                          <p class='headerImgText'>Portfolio</p>
+                      </div>
+                  </div>
+                  <div>
+                      <svg viewBox='0 0 120 100'>
+                      <path d='M38,2 
+                               L82,2 
+                               A12,12 0 0,1 94,10 
+                               L112,44 
+                               A12,12 0 0,1 112,56
+                               L94,90       
+                               A12,12 0 0,1 82,98
+                               L38,98
+                               A12,12 0 0,1 26,90
+                               L8,56
+                               A12,12 0 0,1 8,44
+                               L26,10
+                               A12,12 0 0,1 38,2' />
+                    </svg>
+                      <div class='imgKeeper'>
+                          <img src="imgs/pen.png" width="40" height="40"/>
+                          <p class='headerImgText'>Blog</p>
+                      </div>
+                  </div>
+                  <div>
+                      <svg viewBox='0 0 120 100'>
+                      <path d='M38,2 
+                               L82,2 
+                               A12,12 0 0,1 94,10 
+                               L112,44 
+                               A12,12 0 0,1 112,56
+                               L94,90       
+                               A12,12 0 0,1 82,98
+                               L38,98
+                               A12,12 0 0,1 26,90
+                               L8,56
+                               A12,12 0 0,1 8,44
+                               L26,10
+                               A12,12 0 0,1 38,2' />
+                    </svg>
+                      <div class='imgKeeper'>
+                          <img src="imgs/paperplane.png" width="40" height="40"/>
+                          <p class='headerImgText'>Contact</p>
+                      </div>
+                  </div>
+                  <div class='smallHexagon'>
+                      <svg viewBox='0 0 120 100' class='smallSvg'>
+                      <path d='M38,2 
+                               L82,2 
+                               A12,12 0 0,1 94,10 
+                               L112,44 
+                               A12,12 0 0,1 112,56
+                               L94,90       
+                               A12,12 0 0,1 82,98
+                               L38,98
+                               A12,12 0 0,1 26,90
+                               L8,56
+                               A12,12 0 0,1 8,44
+                               L26,10
+                               A12,12 0 0,1 38,2' />
+                    </svg>
+                      <div class='imgKeeperArrow'>
+                          <img src="imgs/arrow.png" width="20" height="20"/>
+                      </div>
+                  </div>  
+              </div>
+          </div>
+      </header>
+      <nav>
+          <div class='mainContainer'>
+            <h2>B<span>h</span>agas<span class='spanColor'><span>k</span>ara</span>.</h2>
+              <ul class='NavUls'>
+                  <li>HOME</li>
+                  <li>ABOUT</li>
+                  <li>TEAM</li>
+                  <li>SERVICES</li>
+                  <li>PORTFOLIO</li>
+                  <li>BLOG</li>
+                  <li>CONTACT</li>
+              </ul>
+          </div>
+      </nav>
+      <article>
+          <div class='mainContainer'>
+             <div>
+                 <svg viewBox='0 0 120 100'>
+                      <path d='M38,2 
+                               L82,2 
+                               A12,12 0 0,1 94,10 
+                               L112,44 
+                               A12,12 0 0,1 112,56
+                               L94,90       
+                               A12,12 0 0,1 82,98
+                               L38,98
+                               A12,12 0 0,1 26,90
+                               L8,56
+                               A12,12 0 0,1 8,44
+                               L26,10
+                               A12,12 0 0,1 38,2' />
+                    </svg>
+                 <img src='imgs/heartGrey.png' data-newImg='imgs/heart.png' data-old='imgs/heartGrey.png'/>
+                 <h3 class='textColorAlgin'>Build with love</h3>
+                 <p class='textColorAlgin'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut felis non eros venenatis auctor eget at erat.Phasellus non rhoncus nibh, in laoreet orci.</p>
+              </div>
+             <div>
+                 <svg viewBox='0 0 120 100'>
+                      <path d='M38,2 
+                               L82,2 
+                               A12,12 0 0,1 94,10 
+                               L112,44 
+                               A12,12 0 0,1 112,56
+                               L94,90       
+                               A12,12 0 0,1 82,98
+                               L38,98
+                               A12,12 0 0,1 26,90
+                               L8,56
+                               A12,12 0 0,1 8,44
+                               L26,10
+                               A12,12 0 0,1 38,2' />
+                    </svg>
+                     <img src='imgs/diamond.png' data-newImg='imgs/diamondColor.png' data-old='imgs/diamond.png'/>
+                 <h3 class='textColorAlgin'>Clean and modern</h3>
+                 <p class='textColorAlgin'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut felis non eros venenatis auctor eget at erat.Phasellus non rhoncus nibh, in laoreet orci.</p>
+              </div>
+             <div>
+                 <svg viewBox='0 0 120 100'>
+                      <path d='M38,2 
+                               L82,2 
+                               A12,12 0 0,1 94,10 
+                               L112,44 
+                               A12,12 0 0,1 112,56
+                               L94,90       
+                               A12,12 0 0,1 82,98
+                               L38,98
+                               A12,12 0 0,1 26,90
+                               L8,56
+                               A12,12 0 0,1 8,44
+                               L26,10
+                               A12,12 0 0,1 38,2' />
+                     
+                    </svg>
+                    <img src='imgs/cup.png' data-newImg='imgs/cupColor.png' data-old='imgs/cup.png'/>
+                 <h3 class='textColorAlgin'>Easy to use</h3>
+                 <p class='textColorAlgin'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut felis non eros venenatis auctor eget at erat.Phasellus non rhoncus nibh, in laoreet orci.</p>
+              </div>
+             <div>
+                 <svg viewBox='0 0 120 100'>
+                      <path d='M38,2 
+                               L82,2 
+                               A12,12 0 0,1 94,10 
+                               L112,44 
+                               A12,12 0 0,1 112,56
+                               L94,90       
+                               A12,12 0 0,1 82,98
+                               L38,98
+                               A12,12 0 0,1 26,90
+                               L8,56
+                               A12,12 0 0,1 8,44
+                               L26,10
+                               A12,12 0 0,1 38,2' />
+                    
+                    </svg>
+                     <img src='imgs/phone.png' data-newImg='imgs/phoneColor.png' data-old='imgs/phone.png'/>
+                 <h3 class='textColorAlgin'>Fully Responsive</h3>
+                 <p class='textColorAlgin'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut felis non eros venenatis auctor eget at erat.Phasellus non rhoncus nibh, in laoreet orci.</p>
+              </div>
+          </div>
+      </article>
+      <article>
+           <div class='mainContainer'>
+                <h2 class='textColorAlgin'><img src='imgs/Shape%206%20copy.png' width='20px' heigth='20px'/>About <span class='spanColor'>us</span><img src='imgs/Shape%206.png' width='20px' heigth='20px'/></h2>
+               
+                   <div class='imgTv'></div>
+                   <p class='textColorAlgin'>Suspendisse purus elit, vestibulum vitae iaculis ac, accumsan vel risus. Etiam facilisis nunc a hendrerit pharetra. Curabitur at felis quam. Duis dapibus ante eget lorem efficitur mollis. Ut nec velit eget odio luctus suscipit euismod id tortor. Maecenas tempus nisl ac scelerisque pellentesque. Morbi maximus ornare elit, et iaculis tortor volutpat in. Morbi ut nulla nisi. Aliquam vitae ipsum metus. Donec auctor purus nulla, a interdum justo vulputate facilisis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                    <button>Learn more</button>
+          </div>
+      </article>
+      <article>
+          <div class='mainContainer'>
+              <div class='articleHat'>
+                      <svg viewBox='0 0 120 100'>
+                      <path d='M38,2 
+                               L82,2 
+                               A12,12 0 0,1 94,10 
+                               L112,44 
+                               A12,12 0 0,1 112,56
+                               L94,90       
+                               A12,12 0 0,1 82,98
+                               L38,98
+                               A12,12 0 0,1 26,90
+                               L8,56
+                               A12,12 0 0,1 8,44
+                               L26,10
+                               A12,12 0 0,1 38,2' />
+                          
+                      </svg>
+                      <div class='imgKeeper'>
+                          <img src="imgs/study.png" width="60" height="60"/>
+                      </div>
+                 
+               </div>
+              <p>We lorem ipsum your aliquam</p>
+          </div>
+      </article>
+  </body>
 </html>
