@@ -224,7 +224,7 @@ body > article:nth-child(5) {
 
 }
 .articleHat {
-    top: 120px;
+    top: 100px;
     left: 50%;
     transform: translate(-57%);
     color:white;

@@ -1,4 +1,3 @@
-
 $(document).ready(function () {
    var imgKeeper = $('.imgKeeper');
    var arrowKeeper = $('.imgKeeperArrow');
