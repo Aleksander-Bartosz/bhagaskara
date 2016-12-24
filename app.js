@@ -41,4 +41,6 @@ $(document).ready(function () {
             path.css('stroke','#cfd3d4');
         })
     });
+    new ScrollFlow();
+    
 });
