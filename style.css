@@ -353,7 +353,7 @@ body > article:nth-child(6) > div > div.progressBarKeeper > div > p {
    animation-duration: 4s; 
 }
 .eightBar {
-   width: 80%;
+   width: 85%;
    animation-name: eight;
    animation-duration: 4s;  
 }
