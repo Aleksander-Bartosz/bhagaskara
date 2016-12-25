@@ -400,6 +400,7 @@ body > article:nth-child(8) {
 .circleH {
     text-align: center;
     color: #333333;
+    height: 80px;
 }
 .dots { 
     height: 10px;
