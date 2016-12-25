@@ -180,9 +180,9 @@ $(document).ready(function () {
                 imgCreat.attr('src', src);
                 divKeeper.append(imgCreat);
 				divKeeper.append(creatClose);
-				$('body').append(divKeeper);
+				divKeeper.appendTo("body").hide().fadeIn();
             creatClose.on('click', function () {
-                divKeeper.remove();
+                divKeeper.fadeOut();
             })
         });
 });
