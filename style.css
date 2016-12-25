@@ -107,7 +107,7 @@ nav {
     background-color: white;
     height: 89px;
     width: 100%;
-    z-index: 999;
+    z-index: 1;
 }
 nav h2 {
     float:left;
@@ -368,14 +368,6 @@ body > article:nth-child(6) > div > div.progressBarKeeper > div > p {
     float: right;
 }
 
-@keyframes seven {
-    from {width: 0%;}
-    to {width: 70%;}
-}
-@keyframes eight {
-    from {width: 0%;}
-    to {width: 85%;}
-}
 .sticky {
     position: fixed;
     top:0;
@@ -555,4 +547,32 @@ body > footer > div > div.footerLeft > div:nth-child(5) {
 }
 .colorFooter {
     color:#999999;
+}
+.fullScreen{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    background:rgba(255,255,255,0.7);
+}
+.fullScreen img {
+    display: block;
+    width: 500px;
+    height: 500px;
+}
+.close {
+    background-image: url(imgs/wrong.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top:0px;
+    right:0px;
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    z-index: 999;
 }

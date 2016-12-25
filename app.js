@@ -79,15 +79,7 @@ $(document).ready(function () {
             dot.eq(number).css('background-color','#333333');
 		}
 		setInterval(doThis,2000)
-    
-        dot.on('click', function () {
-            var dotClick = $(this);
-            
-            if(dotClick.hasClass('one')) {
-               
-            }
-        });
-   
+  
     $(window).on('scroll', function () {
         var el = $(this).scrollTop();
         var firstAnimeta = $('.nineBar');
@@ -176,4 +168,21 @@ $(document).ready(function () {
                     scrollTop: $("body > footer").offset().top
                 }, 2000);
             });
+    var imgFiller = $('.gallery');
+        imgFiller.on('click', function () {
+            
+            var src = $(this).attr('src');
+            var divKeeper = $('<div>');
+            var creatClose = $('<div>');
+            divKeeper.addClass('fullScreen');
+            creatClose.addClass('close');
+            var imgCreat = $('<img>');
+                imgCreat.attr('src', src);
+                divKeeper.append(imgCreat);
+				divKeeper.append(creatClose);
+				$('body').append(divKeeper);
+            creatClose.on('click', function () {
+                divKeeper.remove();
+            })
+        });
 });
