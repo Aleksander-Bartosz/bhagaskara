@@ -504,6 +504,8 @@ form {
 }
 .footerRight {
     float: left;
+    width: 40%;
+    max-width: 573px;
 }
 .footerLeft {
     margin-top: 100px;
@@ -564,6 +566,9 @@ body > footer > div > div.footerLeft > div:nth-child(5) {
     display: block;
     width: 500px;
     height: 500px;
+    -webkit-box-shadow: 0px 0px 35px 13px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 35px 13px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 35px 13px rgba(0,0,0,0.75);
 }
 .close {
     background-image: url(imgs/wrong.png);
