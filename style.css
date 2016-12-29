@@ -563,22 +563,26 @@ body > footer > div > div.footerLeft > div:nth-child(5) {
     z-index: 1;
     background:rgba(255,255,255,0.7);
 }
-.fullScreen img {
-    display: block;
+.containerImg {
+    position: relative;
     width: 500px;
     height: 500px;
     -webkit-box-shadow: 0px 0px 35px 13px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 35px 13px rgba(0,0,0,0.75);
     box-shadow: 0px 0px 35px 13px rgba(0,0,0,0.75);
 }
+.fullScreen div img {
+    width: 100%;
+    height: 100%;
+}
 .close {
     background-image: url(imgs/wrong.png);
     background-repeat: no-repeat;
     position: absolute;
-    top:0px;
-    right:0px;
-    width: 50px;
-    height: 50px;
+    top:2px;
+    right:2px;
+    width: 20px;
+    height: 20px;
     background-size: cover;
     z-index: 999;
 }
