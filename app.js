@@ -173,13 +173,16 @@ $(document).ready(function () {
             
             var src = $(this).attr('src');
             var divKeeper = $('<div>');
+            var containerImg = $('<div>');
             var creatClose = $('<div>');
             divKeeper.addClass('fullScreen');
+            containerImg.addClass('containerImg');
             creatClose.addClass('close');
             var imgCreat = $('<img>');
                 imgCreat.attr('src', src);
-                divKeeper.append(imgCreat);
-				divKeeper.append(creatClose);
+                containerImg.append(imgCreat);
+                containerImg.append(creatClose);
+                divKeeper.append(containerImg);
 				divKeeper.appendTo("body").hide().fadeIn();
             creatClose.on('click', function () {
                 divKeeper.fadeOut();
