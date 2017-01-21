@@ -168,6 +168,11 @@ $(document).ready(function () {
                     scrollTop: $("body > footer").offset().top
                 }, 2000);
             });
+    $("body > header > div > div > div.smallHexagon").click(function (){
+                $('html, body').animate({
+                    scrollTop: $("body > article:nth-child(3)").offset().top
+                }, 2000);
+            });
     var imgFiller = $('.gallery');
         imgFiller.on('click', function () {
             

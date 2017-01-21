@@ -69,7 +69,6 @@ body > header > div > div > div {
     width: 140px;
     color:white;
     position: relative;
-
 }
 .jumperDiv {
     transform: translateY(-100%)
@@ -79,7 +78,18 @@ body > header > div > div > div {
     position: relative;
     left: 50%;
     transform: translateX(-85%);
-    
+}
+.settingImg {
+    width: 40px;
+    height: 40px;
+}
+.arrowHeader{
+    height: 20px;
+    width: 20px;
+}
+.studyImg {
+    width: 60px;
+    height: 60px;
 }
 .smallSvg {
     height: 65px;
@@ -318,10 +328,14 @@ body > article:nth-child(6) > div > div.progressBarKeeper {
 .shapeLeft {
     position: relative;
     top: 15px;
+    height: 20px;
+    width: 20px;
 }
 .shapeRight {
    position: relative;
-    top: -10px; 
+   top: -10px;
+    height: 20px;
+    width: 20px;
 }
 body > article:nth-child(6) > div > h2:nth-child(1) {
     padding: 70px 0px;
@@ -417,6 +431,10 @@ body > article:nth-child(8) {
     justify-content: center;
     padding: 40px 0px 80px 0px;
 }
+.gallery {
+    width: 300px;
+    height: 300px;
+}
 h2 {
     font-size: 30px;
 }
@@ -492,6 +510,8 @@ input {
 textarea {
     font-size: 15px;
     outline: grey;
+    height: 264px;
+    width: 379px;
 }
 body > footer > div > div > form > input[type="text"]:nth-child(3) {
     margin: 20px 0px;
