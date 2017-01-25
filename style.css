@@ -156,7 +156,7 @@ body > article:nth-child(3){
 }
 body > article:nth-child(3) > div {
     display: flex;
-    
+    align-items: center;
 }
 body > article:nth-child(3) > div > div> svg {
     transform: translate(-13px);
